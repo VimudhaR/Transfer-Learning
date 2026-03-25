@@ -1,0 +1,20 @@
+{"text": "55-year-old female diagnosed with invasive ductal carcinoma of the left breast.", "entities": [{"start": 32, "end": 57, "label": "TUMOR_TYPE"}, {"start": 65, "end": 76, "label": "LOCATION"}]}
+{"text": "Patient presents with T2N1M0 Stage IIB breast cancer.", "entities": [{"start": 22, "end": 28, "label": "TNM_STAGE"}, {"start": 29, "end": 38, "label": "STAGE"}]}
+{"text": "Treatment plan involves AC-T chemotherapy followed by surgery.", "entities": [{"start": 24, "end": 28, "label": "CHEMOTHERAPY"}, {"start": 54, "end": 61, "label": "PROCEDURE"}]}
+{"text": "Prescribed Anastrozole 1mg daily for 5 years.", "entities": [{"start": 11, "end": 22, "label": "MEDICATION"}, {"start": 23, "end": 26, "label": "DOSAGE"}, {"start": 37, "end": 44, "label": "DURATION"}]}
+{"text": "History of hypertension and type 2 diabetes mellitus.", "entities": [{"start": 11, "end": 23, "label": "CO_MORBIDITY"}, {"start": 28, "end": 52, "label": "CO_MORBIDITY"}]}
+{"text": "Sentinel lymph node biopsy was positive for metastasis.", "entities": [{"start": 0, "end": 26, "label": "PROCEDURE"}, {"start": 44, "end": 54, "label": "DIAGNOSIS"}]}
+{"text": "Started on Tamoxifen for hormonal therapy.", "entities": [{"start": 11, "end": 20, "label": "MEDICATION"}, {"start": 25, "end": 41, "label": "THERAPY_TYPE"}]}
+{"text": "Patient reports fatigue and nausea post-chemotherapy.", "entities": [{"start": 16, "end": 23, "label": "SYMPTOM"}, {"start": 28, "end": 34, "label": "SYMPTOM"}]}
+{"text": "Follow-up mammogram showed no evidence of recurrence.", "entities": [{"start": 10, "end": 19, "label": "TEST"}, {"start": 30, "end": 52, "label": "OUTCOME"}]}
+{"text": "Recommended genetic testing for BRCA1/2 mutations.", "entities": [{"start": 12, "end": 27, "label": "TEST"}, {"start": 32, "end": 49, "label": "GENE"}]}
+{"text": "Diagnosis: Triple-negative breast cancer.", "entities": [{"start": 11, "end": 40, "label": "TUMOR_SUBTYPE"}]}
+{"text": "Patient is allergic to Penicillin.", "entities": [{"start": 23, "end": 33, "label": "ALLERGY"}]}
+{"text": "Completed 6 cycles of Docetaxel and Carboplatin.", "entities": [{"start": 22, "end": 31, "label": "CHEMOTHERAPY"}, {"start": 36, "end": 47, "label": "CHEMOTHERAPY"}]}
+{"text": "Physical exam reveals a palpable lump in the right breast.", "entities": [{"start": 24, "end": 37, "label": "SIGN"}, {"start": 45, "end": 57, "label": "LOCATION"}]}
+{"text": "Referral to radiation oncology for adjuvant therapy.", "entities": [{"start": 12, "end": 30, "label": "DEPARTMENT"}, {"start": 35, "end": 51, "label": "THERAPY_TYPE"}]}
+{"text": "Bone scan negative for distant metastasis.", "entities": [{"start": 0, "end": 9, "label": "TEST"}, {"start": 23, "end": 41, "label": "DIAGNOSIS"}]}
+{"text": "Patient is post-menopausal.", "entities": [{"start": 11, "end": 26, "label": "PATIENT_STATUS"}]}
+{"text": "Tumor markers CEA and CA 15-3 are within normal limits.", "entities": [{"start": 14, "end": 17, "label": "BIOMARKER"}, {"start": 22, "end": 29, "label": "BIOMARKER"}, {"start": 34, "end": 54, "label": "RESULT"}]}
+{"text": "Admitted for mastectomy and reconstruction.", "entities": [{"start": 13, "end": 23, "label": "PROCEDURE"}, {"start": 28, "end": 42, "label": "PROCEDURE"}]}
+{"text": "Family history significant for breast cancer in mother.", "entities": [{"start": 31, "end": 44, "label": "DIAGNOSIS"}, {"start": 48, "end": 54, "label": "FAMILY_MEMBER"}]}

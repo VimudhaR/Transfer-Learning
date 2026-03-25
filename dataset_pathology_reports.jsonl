@@ -1,0 +1,20 @@
+{"text": "Specimen labeled 'left breast mass' consists of fibrofatty tissue.", "entities": [{"start": 18, "end": 34, "label": "SPECIMEN"}, {"start": 48, "end": 65, "label": "TISSUE_TYPE"}]}
+{"text": "Microscopic examination reveals invasive lobular carcinoma.", "entities": [{"start": 32, "end": 58, "label": "TUMOR_TYPE"}]}
+{"text": "Nottingham Histologic Grade: 2 (Tubule 3, Nuclear 2, Mitotic 1).", "entities": [{"start": 29, "end": 30, "label": "GRADE"}]}
+{"text": "Tumor size is 1.8 cm in greatest dimension.", "entities": [{"start": 14, "end": 20, "label": "TUMOR_SIZE"}]}
+{"text": "Estrogen Receptor (ER): Positive (95%, strong intensity).", "entities": [{"start": 0, "end": 22, "label": "RECEPTOR_STATUS"}, {"start": 24, "end": 32, "label": "RESULT"}]}
+{"text": "Progesterone Receptor (PR): Negative (<1%).", "entities": [{"start": 0, "end": 26, "label": "RECEPTOR_STATUS"}, {"start": 28, "end": 36, "label": "RESULT"}]}
+{"text": "HER2/neu status: Equivocal (2+) by IHC.", "entities": [{"start": 0, "end": 15, "label": "RECEPTOR_STATUS"}, {"start": 17, "end": 26, "label": "RESULT"}, {"start": 35, "end": 38, "label": "TEST_METHOD"}]}
+{"text": "FISH amplification shows HER2/CEP17 ratio of 2.5.", "entities": [{"start": 0, "end": 4, "label": "TEST_METHOD"}, {"start": 45, "end": 48, "label": "VALUE"}]}
+{"text": "Margins are negative for invasive carcinoma.", "entities": [{"start": 0, "end": 7, "label": "MARGIN_STATUS"}, {"start": 25, "end": 43, "label": "DIAGNOSIS"}]}
+{"text": "Closest margin is 0.2 cm from the posterior aspect.", "entities": [{"start": 18, "end": 24, "label": "DISTANCE"}, {"start": 34, "end": 50, "label": "LOCATION"}]}
+{"text": "Lymphovascular invasion is identified.", "entities": [{"start": 0, "end": 23, "label": "FINDING"}, {"start": 27, "end": 37, "label": "STATUS"}]}
+{"text": "Ductal Carcinoma In Situ (DCIS) of solid type is present.", "entities": [{"start": 0, "end": 31, "label": "TUMOR_TYPE"}, {"start": 35, "end": 45, "label": "PATTERN"}]}
+{"text": "Ki-67 proliferation index is high (45%).", "entities": [{"start": 0, "end": 5, "label": "BIOMARKER"}, {"start": 29, "end": 38, "label": "RESULT"}]}
+{"text": "Sentinel lymph node 1: Negative for malignancy (0/1).", "entities": [{"start": 0, "end": 19, "label": "NODE"}, {"start": 23, "end": 46, "label": "RESULT"}]}
+{"text": "Sentinel lymph node 2: Metastatic carcinoma (3mm focus).", "entities": [{"start": 0, "end": 19, "label": "NODE"}, {"start": 23, "end": 43, "label": "DIAGNOSIS"}, {"start": 45, "end": 54, "label": "SIZE"}]}
+{"text": "Extranodal extension is not identified.", "entities": [{"start": 0, "end": 20, "label": "FINDING"}]}
+{"text": "Background breast tissue shows fibrocystic changes.", "entities": [{"start": 31, "end": 50, "label": "FINDING"}]}
+{"text": "Consistent with primary breast origin.", "entities": [{"start": 24, "end": 30, "label": "SITE"}]}
+{"text": "P53 immunohistochemistry is positive.", "entities": [{"start": 0, "end": 3, "label": "BIOMARKER"}, {"start": 28, "end": 36, "label": "RESULT"}]}
+{"text": "Diagnosis: Fibroadenoma, benign.", "entities": [{"start": 11, "end": 23, "label": "DIAGNOSIS"}, {"start": 25, "end": 31, "label": "STATUS"}]}
