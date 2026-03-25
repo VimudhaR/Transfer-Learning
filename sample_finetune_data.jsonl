@@ -1,0 +1,5 @@
+{"text": "Patient has a 2cm tumor in the left breast.", "entities": [{"start": 14, "end": 17, "label": "TUMOR_SIZE"}, {"start": 36, "end": 42, "label": "TUMOR_LOCATION"}]}
+{"text": "Diagnosis of invasive ductal carcinoma, grade 2.", "entities": [{"start": 13, "end": 38, "label": "TUMOR_TYPE"}, {"start": 40, "end": 47, "label": "GRADE"}]}
+{"text": "ER positive, PR negative, HER2 positive.", "entities": [{"start": 0, "end": 11, "label": "RECEPTOR_STATUS"}, {"start": 13, "end": 24, "label": "RECEPTOR_STATUS"}, {"start": 26, "end": 39, "label": "RECEPTOR_STATUS"}]}
+{"text": "Prescribed Tamoxifen 20mg daily.", "entities": [{"start": 11, "end": 20, "label": "MEDICATION"}, {"start": 21, "end": 25, "label": "DOSAGE"}]}
+{"text": "Scheduled for lumpectomy next week.", "entities": [{"start": 14, "end": 24, "label": "PROCEDURE"}]}
