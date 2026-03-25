@@ -1,124 +1,119 @@
 # Transfer-Learning
 My Final year  group project implementing transfer learning for image classification using a pre-trained deep learning model, fine-tuned on a custom dataset.
-Clinical NLP System (Breast Cancer Analysis)
 
-A React + TypeScript web application designed to analyze clinical text related to breast cancer using advanced Natural Language Processing (NLP) models.
-This system processes clinical notes and extracts meaningful insights using AI-powered analysis.
+````markdown
+# Clinical NLP System (Breast Cancer Analysis)
 
-Project Type: Final Year Group Project
+A React + TypeScript application for analyzing clinical text related to breast cancer using extensive NLP models.
 
-Tech Stack
-Frontend: React + TypeScript
-Backend: Supabase
-NLP Models: Hugging Face
-Deployment: Vercel / Netlify
-Prerequisites
+## Pre-requisites
 
-Before running the project, install the following:
+* **Node.js**: Install from [nodejs.org](https://nodejs.org/)
+* **Git**: Install from [git-scm.com](https://git-scm.com/)
+* **Supabase Account**: Free account at [supabase.com](https://supabase.com/)
+* **Hugging Face Account**: Free account at [huggingface.co](https://huggingface.co/)
 
-Node.js – https://nodejs.org
-Git – https://git-scm.com
-Supabase Account – https://supabase.com
-Hugging Face Account – https://huggingface.co
-Installation Guide
-1. Clone the Repository
+## How to Run (Step-by-Step)
 
-Open CMD / PowerShell / Terminal and run:
+### 1. Clone the Repository
 
-git clone https://github.com/ShreehariMenon/TL_MP.git
+Open your terminal (CMD or PowerShell) and run:
+
+```bash
+git clone [https://github.com/ShreehariMenon/TL_MP.git](https://github.com/ShreehariMenon/TL_MP.git)
 cd TL_MP
-2. Install Dependencies
+````
+
+### 2\. Install Dependencies
+
+```bash
 npm install
-Backend Setup (Supabase)
-Go to https://database.new
-Create a New Project
-Navigate to:
-Settings → API
+```
 
-Copy the following:
+### 3\. Setup Backend (Supabase)
 
-Project URL
-Anon Public Key
-Configure Local Environment
+This project requires a backend to run the AI models.
 
-Copy the example environment file:
+1.  Go to [database.new](https://www.google.com/search?q=https://database.new) and create a **New Project**.
+2.  Once created, go to **Settings \> API**.
+      * Copy the `Project URL`.
+      * Copy the `anon public` Key.
 
+### 4\. Configure Local Environment
+
+Copy the example env file:
+
+```bash
 cp .env.example .env
+# OR on Windows CMD: copy .env.example .env
+```
 
-Windows CMD:
+Open `.env` in a text editor (Notepad/VS Code).
+Fill in your details:
 
-copy .env.example .env
+```env
+VITE_SUPABASE_URL=your_project_url_from_step_3
+VITE_SUPABASE_ANON_KEY=your_anon_key_from_step_3
+```
 
-Open .env and update the following values:
+### 5\. Setup AI Models (Hugging Face)
 
-VITE_SUPABASE_URL=your_project_url
-VITE_SUPABASE_ANON_KEY=your_anon_key
-Setup AI Models (Hugging Face)
-Generate a token from:
+1.  Get a free token from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens).
 
-https://huggingface.co/settings/tokens
+2.  Open your terminal and login to Supabase CLI:
 
-Login to Supabase CLI
-npx supabase login
-Link Local Project to Supabase
-npx supabase link --project-ref your_project_ref_id
+    ```bash
+    npx supabase login
+    ```
 
-Example:
+3.  Link your local code to your new cloud project:
 
-https://abcdefgh.supabase.co
+    ```bash
+    npx supabase link --project-ref your_project_ref_id
+    ```
 
-Project reference ID = abcdefgh
+    *(The ref ID is the random string in your Supabase URL, e.g., `abcdefgh` from `https://abcdefgh.supabase.co`)*
 
-Set API Secret
-npx supabase secrets set HUGGING_FACE_API_KEY=hf_your_token_here
-Deploy Backend Function
-npx supabase functions deploy clinical-nlp-analysis --no-verify-jwt
-Running the Application
+4.  Set the API Secret (Important\!):
 
-Start the development server:
+    ```bash
+    npx supabase secrets set HUGGING_FACE_API_KEY=hf_your_token_here
+    ```
 
+5.  Deploy the backend code:
+
+    ```bash
+    npx supabase functions deploy clinical-nlp-analysis --no-verify-jwt
+    ```
+
+### 6\. Run the App
+
+```bash
 npm run dev
+```
 
-Open in browser:
+Open the link (usually `http://localhost:5173`) in your browser.
 
-http://localhost:5173
-Deployment
+## Deployment (Production)
 
-You can deploy the project using Vercel or Netlify.
+To make your app public (so your friend can visit a URL like `my-app.vercel.app`):
 
-Option 1: Vercel (Recommended)
-Push your code to GitHub
-Go to https://vercel.com
-Sign in with GitHub
-Click Add New Project
-Select this repository
+### Option 1: Vercel (Recommended)
 
-Add the following Environment Variables:
+1.  Push your code to GitHub.
+2.  Go to [vercel.com](https://vercel.com/) and sign up with GitHub.
+3.  Click **"Add New Project"** and select this repository.
+4.  **Important**: Under "Environment Variables", add:
+      * `VITE_SUPABASE_URL`: (Your URL from step 4)
+      * `VITE_SUPABASE_ANON_KEY`: (Your Key from step 4)
+5.  Click **Deploy**.
 
-VITE_SUPABASE_URL
-VITE_SUPABASE_ANON_KEY
+### Option 2: Netlify
 
-Click Deploy
+1.  Go to [netlify.com](https://netlify.com/) and sign up.
+2.  Drag and drop the `dist` folder (created after running `npm run build`) OR connect via GitHub.
+3.  If connecting GitHub, make sure to add the Environment Variables in **Site Settings \> Build & Deploy \> Environment**.
 
-Your app will be available at:
+<!-- end list -->
 
-https://your-project-name.vercel.app
-Option 2: Netlify
-Go to https://netlify.com
-Sign up or login
-Deploy using one of the methods:
-Option A — GitHub Integration
 
-Connect your GitHub repository and deploy.
-
-Option B — Manual Deployment
-
-Build the project:
-
-npm run build
-
-Upload the dist folder to Netlify.
-
-Add environment variables under:
-
-Site Settings → Build & Deploy → Environment
